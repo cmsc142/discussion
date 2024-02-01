@@ -1,2 +1,3 @@
 class Train:
-  pass
+  def __init__():
+    pass
