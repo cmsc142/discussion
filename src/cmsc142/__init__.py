@@ -1,3 +1,3 @@
-from .queue import *
-from .stack import *
-from .queue_with_stack import *
+from .queue.queue import *
+from .queue.queue_with_stack import *
+from .stack.stack import *
