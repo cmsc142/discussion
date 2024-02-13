@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: example_package
+Version: 0.0.1
+Summary: cmsc 142 discussion
+Author-email: ethan chou <echou1@umd.edu>
+Project-URL: Homepage, https://github.com/echoumcp1/cmsc142
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+
+# cmsc142
+tuutorial for cmsc142 discussion
