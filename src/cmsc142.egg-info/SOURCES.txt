@@ -1,0 +1,15 @@
+LICENSE
+README.md
+pyproject.toml
+src/cmsc142/__init__.py
+src/cmsc142.egg-info/PKG-INFO
+src/cmsc142.egg-info/SOURCES.txt
+src/cmsc142.egg-info/dependency_links.txt
+src/cmsc142.egg-info/top_level.txt
+src/cmsc142/misc/__init__.py
+src/cmsc142/misc/classes.py
+src/cmsc142/queue/__init__.py
+src/cmsc142/queue/queue.py
+src/cmsc142/queue/queue_with_stack.py
+src/cmsc142/stack/__init__.py
+src/cmsc142/stack/stack.py

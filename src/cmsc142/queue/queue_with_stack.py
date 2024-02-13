@@ -1,5 +1,3 @@
-from random import randint
-
 class MyQueue:
     def __init__(self):
         self.s1 = []
