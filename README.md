@@ -1,2 +1,2 @@
 # cmsc142
-tuutorial for cmsc142 discussion
+tutorial for cmsc142 discussion
