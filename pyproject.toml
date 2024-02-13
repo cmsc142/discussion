@@ -1,5 +1,5 @@
 [project]
-name = "example_package"
+name = "cmsc142"
 version = "0.0.1"
 authors = [
   { name="ethan chou", email="echou1@umd.edu" },
