@@ -25,17 +25,19 @@ class Tree:
         return self.search_helper(self.root, key)
         
     def insert(self, key, value):
-        self.root = self.insert_helper(self.root, Node(key, value))
+        self.root = self.insert_helper(self.root, key, value)
 
-    def insert_helper(self, curr, node):
+    def insert_helper(self, curr, key, value):
         if curr is None:
-            return node
-        if node.key < curr.key:
-            curr.left = self.insert_helper(curr.left, node)
-            return curr
+            return Node(key, value)
+        if key < curr.key:
+            curr.left = self.insert_helper(curr.left, key, value)
+        elif key > curr.key:
+            curr.right = self.insert_helper(curr.right, key, value)
         else:
-            curr.right = self.insert_helper(curr.right, node)
-            return curr
+            curr.value = value
+
+        return curr
 
 
 if __name__ == "__main__":
@@ -43,5 +45,7 @@ if __name__ == "__main__":
     my_tree.insert(5, "hi")
     my_tree.insert(0, "bye")
     my_tree.insert(-1, "bye")
+    print(my_tree.search(-1))
+    my_tree.insert(-1, "hi")
     print(my_tree.search(-1))
     
