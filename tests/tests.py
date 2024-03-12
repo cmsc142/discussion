@@ -13,7 +13,7 @@ def test2():
     try:
         my_tree.search(-1)
     except Exception as e:
-        print(e)
+        return True
 
 def postorder(root):
     if root is None:
@@ -33,6 +33,6 @@ def test3():
 
 if __name__ == "__main__":
     print(f'test one passed: {test1()}')
-    test2()
+    print(f'test two passed: {test2()}')
     print(f'test three passed: {test3()}')
     
