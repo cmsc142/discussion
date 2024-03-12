@@ -38,14 +38,3 @@ class Tree:
             curr.value = value
 
         return curr
-
-
-if __name__ == "__main__":
-    my_tree = Tree()
-    my_tree.insert(5, "hi")
-    my_tree.insert(0, "bye")
-    my_tree.insert(-1, "bye")
-    print(my_tree.search(-1))
-    my_tree.insert(-1, "hi")
-    print(my_tree.search(-1))
-    
