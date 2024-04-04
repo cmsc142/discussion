@@ -43,6 +43,5 @@ class TestTree(unittest.TestCase):
         for e in lst:
             self.assertTrue(e in sorted_lst)
     
-
 if __name__ == "__main__":
     unittest.main()
