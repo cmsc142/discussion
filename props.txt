@@ -1,0 +1,6 @@
+s.pop(s.push(x)) = x
+sort(x) and len(x) = 1 means [x]
+sort(x) is ordered
+len(sort(x)) = len(x)
+sort(sort(x)) = sort(x)
+x is in lst means x is in sort(lst)

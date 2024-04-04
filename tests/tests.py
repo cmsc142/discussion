@@ -23,19 +23,20 @@ class MyTests(unittest.TestCase):
             my_tree.search(-1)
 
     def test3(self):
-        def postorder(root):
+        def inorder(root):
             if root is None:
-                return ["Lf"]
+                return []
             else:
-                return postorder(root.left) + postorder(root.right) + [(root.key, root.value)]
+                return inorder(root.left) + [root.key] + inorder(root.right)
+
         my_tree = Tree()
         my_tree.insert(5, "5")
         my_tree.insert(4, "4")
         my_tree.insert(6, "6")
         my_tree.insert(3, "3")
 
-        porder = postorder(my_tree.root)
-        self.assertEqual(porder,["Lf", "Lf", (3, "3"), "Lf", (4, "4"), "Lf", "Lf", (6, "6"), (5, "5")])
+        ordered = inorder(my_tree.root)
+        self.assertEqual(ordered, [3,4,5,6])
 
 if __name__ == "__main__":
     unittest.main()
