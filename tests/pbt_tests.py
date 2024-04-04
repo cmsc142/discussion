@@ -12,7 +12,7 @@ def inorder(root):
 def is_sorted(lst):
     return all(lst[i] <= lst[i+1] for i in range(len(lst) - 1))
     
-class TestTree(unittest.TestCase):
+class Tests(unittest.TestCase):
     @given(st.lists(st.integers(), unique=True))
     @example([])
     @settings(max_examples=100)
