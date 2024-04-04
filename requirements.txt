@@ -1,0 +1,2 @@
+cmsc142 @ file:///Users/ethanchou/Desktop/cmsc142cpy/dist/cmsc142-0.0.1.tar.gz#sha256=dc2cd2333ee9d7c8f1ff48a9454f12288fc525e3adf3d8a261dc24620b2c9dec
+hypothesis
