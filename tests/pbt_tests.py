@@ -9,6 +9,9 @@ def inorder(root):
     else:
         return inorder(root.left) + [root.key] + inorder(root.right)
 
+def is_sorted(lst):
+    return all(lst[i] <= lst[i+1] for i in range(len(lst) - 1))
+    
 class TestTree(unittest.TestCase):
     @given(st.lists(st.integers(), unique=True))
     @example([])
@@ -28,7 +31,7 @@ class TestTree(unittest.TestCase):
         self.assertEqual(val, e)
     
     @given(st.lists(st.integers()))
-    def test_in_sorted(self, lst):
+    def test_is_sorted(self, lst):
         sorted_lst = merge_sort(lst)
         self.assertTrue(is_sorted(sorted_lst))
 
@@ -39,7 +42,7 @@ class TestTree(unittest.TestCase):
     @given(st.lists(st.integers()))
     def test_in_sorted(self, lst):
         sorted_lst = merge_sort(lst)
-
+    
         for e in lst:
             self.assertTrue(e in sorted_lst)
     

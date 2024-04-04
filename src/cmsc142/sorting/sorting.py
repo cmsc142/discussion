@@ -20,6 +20,3 @@ def merge(left, right):
     merged += right
 
     return merged
-
-def is_sorted(lst):
-    return all(lst[i] <= lst[i+1] for i in range(len(lst) - 1))
