@@ -1,4 +1,5 @@
 from copy import deepcopy
+from sorting import merge
 
 class StatelessStack:
     def __init__(self, stack):
